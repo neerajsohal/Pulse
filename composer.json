@@ -1,0 +1,23 @@
+{
+    "name": "neerajsohal/pulse",
+    "description": "PHP client for getting social media information about someone",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "neerajsohal",
+            "email": "hello@neerajkumar.name"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^6.1",
+        "j7mbo/twitter-api-php": "^1.0",
+        "facebook/php-sdk-v4": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pulse\\": "src/Pulse"
+        }
+    }  
+}
