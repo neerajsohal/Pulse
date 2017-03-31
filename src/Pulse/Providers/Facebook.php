@@ -19,13 +19,19 @@ class Facebook extends AbstractProvider {
 
 	}
 
+	public function info($id) {
+		$response = $this->facebook->get('/'.$id.'?fields=id,name,about,username');
+		return json_decode($response->getBody());
+	}
+
 	public function userId($id) {
 		$response = $this->facebook->get('/'.$id.'?fields=id');
+		return ($response->getDecodedBody()['id']);
 	}
 
 	public function likes($id) {
 		$response = $this->facebook->get('/'.$id.'?fields=likes');
-		print_r($response->getDecodedBody()['likes']);
+		return $response->getDecodedBody()['likes'];
 	}
 
 }

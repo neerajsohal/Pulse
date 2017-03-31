@@ -3,6 +3,7 @@
     "description": "PHP client for getting social media information about someone",
     "type": "library",
     "license": "MIT",
+    "version": "0.0.0",
     "authors": [
         {
             "name": "neerajsohal",
@@ -19,5 +20,8 @@
         "psr-4": {
             "Pulse\\": "src/Pulse"
         }
-    }  
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.3"
+    }
 }
